@@ -6,8 +6,13 @@
 import random
 magic_number = random.randint(1, 9) # The number guessed randint
 print("The magic number is: ", magic_number)
-# Get the user input
-user_guess = int(input("Guess the magic number... enter it below: "))
+# Get the user input  and handle errors
+while True:
+    try:
+        user_guess = int(input("Guess the magic number... enter it below: "))
+        break
+    except:
+        print("Please enter a number only: ")
 # Check whether the numbers match
 while user_guess != magic_number:
     user_guess = int(input("Try another guess... enter it below: "))
