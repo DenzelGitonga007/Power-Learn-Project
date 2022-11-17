@@ -12,4 +12,7 @@ void main() {
   print(me); //The Map
   print(f_name + " " + l_name); // Concatenation
   print("$f_name $l_name 'Dollar sign'");
+
+  // Accessing the elements of the string like a list
+  
 }
