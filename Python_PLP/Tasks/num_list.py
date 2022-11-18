@@ -19,3 +19,10 @@ print("Under 45: ")
 for under_45 in num_list_sorted:
     if under_45 < 45:
         print(under_45)
+# Enumerating to find the index and values
+for count, value in enumerate(num_list_sorted):
+    # Check for number 36, and print its index
+    if value == 36:
+        print("...Looking the position of number 36...")
+        print(str(value) + " is at position " + str(count))
+        break
