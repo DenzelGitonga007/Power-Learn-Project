@@ -7,6 +7,8 @@
     <title>Event handling</title>
 </head>
 <body>
+    <!-- Method one for event handling:
+    Button onclick: -->
     <!-- Set a button to display the info on the page_info h1 -->
     <button type="button" onclick="pageInfo()">Page Information</button>
     <h1 id="page_info"></h1>
@@ -22,6 +24,20 @@
         alert("Event handling has worked... you're doing well...")
     }
     // window.onload = eventHandling() -- when the page loads
+    </script>
+    <br> <br>
+    <!-- Method two for event handling:
+    Add event listener: -->
+    <!-- Button to display date -->
+    <button type="button" id="date_btn">Today's date</button>
+    <!-- The p to display the date -->
+    <p id="date_p"></p>
+    <script>
+        document.getElementById("date_btn").addEventListener("click", leo)
+        // The date function, Leo
+        function leo() {
+            document.getElementById("date_p").innerHTML = Date()
+        }
     </script>
 </body>
 </html>
