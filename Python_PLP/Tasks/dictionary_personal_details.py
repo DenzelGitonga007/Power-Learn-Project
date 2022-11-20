@@ -9,3 +9,8 @@ print("...Updating age to 55...")
 new_age = {"Age": 50}
 personalDetails.update(new_age)
 print("With age updated: ", personalDetails)
+print("...Remembering my last name...")
+last_name = personalDetails["LastName"]
+print("Your last name is", last_name)
+print("...Getting the dictionary length...")
+print("The dictionary length is",len(personalDetails))
