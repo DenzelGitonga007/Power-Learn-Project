@@ -18,5 +18,14 @@ print("Check out my cars list meeehn!: $cars");
 // Manipulating the list
 cars.add("Jeep");
 print("Oh, I bought another one, see the list now: $cars");
-
+// 4. Maps -- these are the dictionaries in Python
+Map fullname = {
+  "firstname" : "Denzel",
+  "middlename" : "Murathi",
+  "surname" : "Gitonga"
+};
+print("My fullname is: $fullname");
+// Accessing just the name
+print("But most people use:");
+print(fullname["firstname"]);
 }
