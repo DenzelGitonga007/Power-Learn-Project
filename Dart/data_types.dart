@@ -8,4 +8,7 @@ double num_2 = 5;
 print("$num is of type interger");
 print("$num_2 is a double");
 
+// 2. Strings
+String name = "Denzel";
+print("I am $name");
 }
