@@ -11,4 +11,12 @@ print("$num_2 is a double");
 // 2. Strings
 String name = "Denzel";
 print("I am $name");
+
+// 3. Lists
+List cars = ["Benz", "BMW", "Dodge", "GTR"];
+print("Check out my cars list meeehn!: $cars");
+// Manipulating the list
+cars.add("Jeep");
+print("Oh, I bought another one, see the list now: $cars");
+
 }
