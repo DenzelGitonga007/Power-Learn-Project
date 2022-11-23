@@ -24,6 +24,24 @@ void main() {
   capital_cities.add("Kakuma");
   capital_cities.add("Mogadishu");
   print("After independence, the cities are: $capital_cities");
-
-
+  // Adding multiple values
+  capital_cities.addAll(["Daadab", "Eritrea"]);
+  print("Too many now, haha: $capital_cities");
+  // 5. Create a map
+  Map schools = {
+    "Univeristy" : "KAFU",
+    "High school" : "Kamiti",
+    "Primary school" : "Green Angels Academy"
+  };
+  print("The schools I have attended are: $schools");
+  // Adding another element
+  schools["Sunday school"] = "Sanctuary of Love";
+  print("Now completed: $schools");
+  schools.addAll({
+    "Driving school" : "Petanns",
+    "Therapy" : "Tao",
+    "Online sessions" : ["Coursera", "PLP", "eMobilis", "Microsoft", "Google"],
+  });
+  print("More schools: $schools");
+  print("The online sessions, I've done: ${schools['Online sessions'][2]}");
 }
