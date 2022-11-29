@@ -18,4 +18,11 @@ void main() {
   int? age = int.parse(stdin.readLineSync()!);
   // The "?" and "!" are for null entry
   print("Congratulations, you are $age years old");
+
+  int age_2 = int.parse(stdin.readLineSync()!);
+  if (age_2 > 21) {
+    print("Drinks allowed");
+  } else {
+    print("Go home");
+  }
 }
