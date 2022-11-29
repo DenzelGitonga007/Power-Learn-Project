@@ -26,5 +26,18 @@ void main() {
 
   print(circumference(7));
   // 4. A function to print out a greeting in any language.
-  
+  void greeting(String salamu) {
+    // return salamu;
+    print(salamu);
+  }
+
+  greeting("Niaje");
+  // 5. Write a function to draw a triangle using Dart. Basically we would want
+  void triangle() {
+    print("  /|");
+    print(" / |");
+    print("/__|");
+  }
+
+  triangle();
 }
