@@ -9,4 +9,22 @@ void main() {
 
   // Call the function
   print(sumNum());
+
+  // 2. Write down a function that prints out your name.
+  String fullName(String name) {
+    print("Hello $name");
+    return name;
+  }
+
+  print(fullName("Denzel"));
+  // 3. A function to calculate circumference of a circle.
+  double circumference(double r) {
+    // Declare the constant pie
+    const pie = 3.14;
+    return 2 * pie * r;
+  }
+
+  print(circumference(7));
+  // 4. A function to print out a greeting in any language.
+  
 }
