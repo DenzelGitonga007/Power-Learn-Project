@@ -1,2 +1,0 @@
-This is a simple text file.
-We will use it to learn about file handling in Python
