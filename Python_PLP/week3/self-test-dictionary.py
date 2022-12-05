@@ -21,3 +21,6 @@ personalDetails = {
 }
 # Show the initial dictionary
 print("Your details at present are:",personalDetails)
+# Update Age to 55
+personalDetails.update(Age = 55)
+print("With updated age:",personalDetails)
