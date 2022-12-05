@@ -24,3 +24,5 @@ print("Your details at present are:",personalDetails)
 # Update Age to 55
 personalDetails.update(Age = 55)
 print("With updated age:",personalDetails)
+# Print the last name
+print("Your last name is:", personalDetails.get("LastName"))
