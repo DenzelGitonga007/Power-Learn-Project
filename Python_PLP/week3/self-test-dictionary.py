@@ -26,3 +26,5 @@ personalDetails.update(Age = 55)
 print("With updated age:",personalDetails)
 # Print the last name
 print("Your last name is:", personalDetails.get("LastName"))
+# Print the length
+print("Your details file is {} elements long".format(len(personalDetails)))
