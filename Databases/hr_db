@@ -49,5 +49,16 @@ MariaDB [hr_db_plp]> CREATE TABLE job(
     -> );
 Query OK, 0 rows affected (0.047 sec)
 
+-- departments
+MariaDB [hr_db_plp]> # departments table
+MariaDB [hr_db_plp]> CREATE TABLE departments(
+    -> department_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    -> department_name VARCHAR(30) NOT NULL,
+    -> location_id INT(11) DEFAULT NULL,
+    -> FOREIGN KEY(location_id) REFERENCES locations(location_id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.026 sec)
+
+-- employees
 
 
