@@ -4,3 +4,10 @@ Query OK, 1 row affected (0.009 sec)
 MariaDB [(none)]> USE hr_db_plp;
 Database changed
 
+MariaDB [hr_db_plp]> # Create the tables
+MariaDB [hr_db_plp]> # regions table
+MariaDB [hr_db_plp]> CREATE TABLE regions(
+    -> region_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    -> region_name VARCHAR(25) DEFAULT NULL
+    -> );
+Query OK, 0 rows affected (0.038 sec)
