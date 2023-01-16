@@ -1,9 +1,12 @@
+-- Creating the DB
 MariaDB [(none)]> # Create a HR (Human Resource) database
 MariaDB [(none)]> CREATE DATABASE hr_db_plp;
 Query OK, 1 row affected (0.009 sec)
 MariaDB [(none)]> USE hr_db_plp;
 Database changed
 
+-- Creating the tables
+-- regions
 MariaDB [hr_db_plp]> # Create the tables
 MariaDB [hr_db_plp]> # regions table
 MariaDB [hr_db_plp]> CREATE TABLE regions(
@@ -11,3 +14,17 @@ MariaDB [hr_db_plp]> CREATE TABLE regions(
     -> region_name VARCHAR(25) DEFAULT NULL
     -> );
 Query OK, 0 rows affected (0.038 sec)
+
+-- countries
+MariaDB [hr_db_plp]> # countries table
+MariaDB [hr_db_plp]> CREATE TABLE countries(
+    -> country_id CHAR(2) PRIMARY KEY,
+    -> country_name VARCHAR(40) DEFAULT NULL,
+    -> region_id INT(11) NOT NULL,
+    -- relationship
+    -> FOREIGN KEY(region_id) REFERENCES regions(region_id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.030 sec)
+
+
+
