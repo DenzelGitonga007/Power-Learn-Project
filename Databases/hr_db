@@ -163,3 +163,12 @@ Query OK, 1 row affected (0.002 sec)
     -> (1, 'Denzel', 'Gitonga', 'gitongadenzel@gmail.com', '0714082283', NOW(), 1, 10000, 1, 1);
 Query OK, 1 row affected, 1 warning (0.002 sec)
 
+-- dependents
+INSERT INTO dependents(dependent_id, first_name, last_name, relationship, employee_id) VALUES
+    -> (26, 'Rip', 'Colmenares', 'Child', 119),
+    -> (27, 'Julia', 'Raphaely', 'Child', 114),
+    -> (28, 'Woody', 'Russell', 'Child', 146),
+    -> (29, 'Alec', 'Partners', 'Child', 146),
+    -> (30, 'Sandra', 'Taylor', 'Child', 176);
+Query OK, 5 rows affected (0.002 sec)
+Records: 5  Duplicates: 0  Warnings: 0
