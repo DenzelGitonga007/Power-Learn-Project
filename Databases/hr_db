@@ -1,0 +1,6 @@
+MariaDB [(none)]> # Create a HR (Human Resource) database
+MariaDB [(none)]> CREATE DATABASE hr_db_plp;
+Query OK, 1 row affected (0.009 sec)
+MariaDB [(none)]> USE hr_db_plp;
+Database changed
+
