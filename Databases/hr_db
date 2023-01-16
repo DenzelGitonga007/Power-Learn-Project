@@ -39,5 +39,15 @@ MariaDB [hr_db_plp]> CREATE TABLE locations(
     -> );
 Query OK, 0 rows affected (0.031 sec)
 
+-- jobs
+MariaDB [hr_db_plp]> # jobs table
+MariaDB [hr_db_plp]> CREATE TABLE job(
+    -> job_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    -> job_title VARCHAR(35) NOT NULL,
+    -> minimum_salary DECIMAL(8,2) DEFAULT NULL,
+    -> maximum_salary DECIMAL(8,2) DEFAULT NULL
+    -> );
+Query OK, 0 rows affected (0.047 sec)
+
 
 
