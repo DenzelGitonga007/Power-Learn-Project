@@ -76,3 +76,15 @@ MariaDB [hr_db_plp]> CREATE TABLE employees(
     -> FOREIGN KEY(manager_id) REFERENCES employees(employee_id));
 Query OK, 0 rows affected (0.023 sec)
 
+-- dependents
+MariaDB [hr_db_plp]> # dependents table
+MariaDB [hr_db_plp]> CREATE TABLE dependents(
+    -> dependent_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    -> first_name VARCHAR(50) NOT NULL,
+    -> last_name VARCHAR(50) NOT NULL,
+    -> relationship VARCHAR(23) NOT NULL,
+    -> employee_id INT(11) NOT NULL,
+    -> FOREIGN KEY(employee_id) REFERENCES employees(employee_id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.029 sec)
+
