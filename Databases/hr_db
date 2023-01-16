@@ -157,3 +157,9 @@ Records: 11  Duplicates: 0  Warnings: 0
 MariaDB [hr_db_plp]> INSERT INTO departments(department_id, department_name, location_id) VALUES
     -> (1, 'Manager', 1400);
 Query OK, 1 row affected (0.002 sec)
+
+-- employees
+ INSERT INTO employees(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, manager_id, department_id) VALUES
+    -> (1, 'Denzel', 'Gitonga', 'gitongadenzel@gmail.com', '0714082283', NOW(), 1, 10000, 1, 1);
+Query OK, 1 row affected, 1 warning (0.002 sec)
+
