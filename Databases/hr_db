@@ -136,3 +136,21 @@ MariaDB [hr_db_plp]> INSERT INTO locations(location_id, street_address, postal_c
     -> (2700, 'Schwanthalerstr, 7031', '80925', 'Munich', 'Bavaria', 'DE');
 Query OK, 7 rows affected (0.004 sec)
 Records: 7  Duplicates: 0  Warnings: 0
+
+-- jobs
+MariaDB [hr_db_plp]> INSERT INTO jobs(job_id, job_title, minimum_salary, maximum_salary) VALUES
+    -> (1, 'Public Accountant', 4200, 9000),
+    -> (2, 'Accounting Manager', 8200, 16000),
+    -> (3, 'Administration Assistant', 3000, 6000),
+    -> (4, 'President', 20000, 40000),
+    -> (5, 'Administrative Vice President', 15000, 30000),
+    -> (6, 'Accountant', 4200, 9000),
+    -> (7, 'Finance Manager', 8200, 16000),
+    -> (8, 'Human Resources Representative', 4000, 9000),
+    -> (9, 'Programmer', 4000, 10000),
+    -> (10, 'Marketing Manager', 9000, 15000),
+    -> (11, 'Marketing Representative', 4000, 9000);
+Query OK, 11 rows affected (0.005 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+
