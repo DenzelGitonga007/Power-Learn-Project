@@ -153,4 +153,7 @@ MariaDB [hr_db_plp]> INSERT INTO jobs(job_id, job_title, minimum_salary, maximum
 Query OK, 11 rows affected (0.005 sec)
 Records: 11  Duplicates: 0  Warnings: 0
 
-
+-- departments
+MariaDB [hr_db_plp]> INSERT INTO departments(department_id, department_name, location_id) VALUES
+    -> (1, 'Manager', 1400);
+Query OK, 1 row affected (0.002 sec)
