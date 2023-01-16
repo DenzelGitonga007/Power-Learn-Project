@@ -88,3 +88,16 @@ MariaDB [hr_db_plp]> CREATE TABLE dependents(
     -> );
 Query OK, 0 rows affected (0.029 sec)
 
+
+-- Populating the database
+-- regions
+MariaDB [hr_db_plp]> # Inserting data into the DB
+MariaDB [hr_db_plp]> INSERT INTO regions(region_id, region_name) VALUES
+    -> (1, 'Europe'),
+    -> (2, 'Americas'),
+    -> (3, 'Asia'),
+    -> (4, 'Middle East and Africa');
+Query OK, 4 rows affected (0.010 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+
