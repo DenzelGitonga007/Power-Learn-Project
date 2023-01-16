@@ -91,7 +91,6 @@ Query OK, 0 rows affected (0.029 sec)
 
 -- Populating the database
 -- regions
-MariaDB [hr_db_plp]> # Inserting data into the DB
 MariaDB [hr_db_plp]> INSERT INTO regions(region_id, region_name) VALUES
     -> (1, 'Europe'),
     -> (2, 'Americas'),
@@ -100,4 +99,28 @@ MariaDB [hr_db_plp]> INSERT INTO regions(region_id, region_name) VALUES
 Query OK, 4 rows affected (0.010 sec)
 Records: 4  Duplicates: 0  Warnings: 0
 
-
+-- countries
+MariaDB [hr_db_plp]> INSERT INTO countries(country_id, country_name, region_id) VALUES
+    -> ('AR', 'Argentina', 2),
+    -> ('AU', 'Australia', 3),
+    -> ('BE', 'Beligium', 2),
+    -> ('CA', 'Canada', 2),
+    -> ('CH', 'Switzerland', 1),
+    -> ('CN', 'China', 3),
+    -> ('DE', 'Germany', 1),
+    -> ('DK', 'Denmark', 1),
+    -> ('EG', 'Egypt', 4),
+    -> ('FR', 'France', 1),
+    -> ('HK', 'HongKong', 3),
+    -> ('IL', 'Israel', 4),
+    -> ('IN', 'India', 3),
+    -> ('IT', 'Italy', 1),
+    -> ('UK', 'United Kingdom', 1),
+    -> ('JP', 'Japan', 3),
+    -> ('KW', 'Kuwait', 4),
+    -> ('MX', 'Mexico', 2),
+    -> ('NG', 'Nigeria', 4),
+    -> ('NL', 'Netherlands', 1),
+    -> ('SG', 'Singapore', 3);
+Query OK, 21 rows affected (0.006 sec)
+Records: 21  Duplicates: 0  Warnings: 0
