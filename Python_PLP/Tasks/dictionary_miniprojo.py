@@ -10,6 +10,5 @@
 # the program should be able to suggest the word that might be intended.
 # eg . pott instead of pot or rainn instead of rain. Tip: use difflib library here
 
-
-
-
+# Import the JSON module and the file containing the json string
+import json
