@@ -12,4 +12,14 @@
 
 # Import the JSON module and the file containing the json string
 import json
-dictionary_source = open(file)
+json_dictionary_source = open("Python_PLP\Tasks/dictionary-data-master/dictionary-data-master/data.json")
+# Load the json file as a dictionary in python
+dictionary_source = json.load(json_dictionary_source)
+
+# Try and iterate through the data inside the file-- dictionary_source
+for word in dictionary_source["abandoned industrial site"]:
+    print(word)
+
+# Get the keys
+# print(dictionary_source.keys())
+
