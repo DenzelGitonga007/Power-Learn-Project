@@ -24,13 +24,14 @@ def search_word(word):
         # Change the word into one nomalised case
     filtered_word = word.lower()
     # Check if the word exist
-    # Search for the word in the dictionary_source
-    for meaning in dictionary_source[filtered_word]:
-        # Check if the word exist in the dictionary
-        if filtered_word not in dictionary_source:
-            print("Sorry, word not found, try another one...")
-        else:
+    try:
+        # Search for the word in the dictionary_source
+        for meaning in dictionary_source[filtered_word]:
             print("\nThe meaning of {} is:\n{}".format(word, meaning))
+    except KeyError:
+        print("Oops!🫠 🫤  Word not found... Try another search perhaps?🤔")
+#end of function search_word
+
 # Let the program run multiple times until the user exits
 rerun = "y"
 while (rerun.lower() == "y"):
