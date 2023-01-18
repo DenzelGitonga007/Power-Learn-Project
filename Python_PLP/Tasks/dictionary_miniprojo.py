@@ -12,3 +12,4 @@
 
 # Import the JSON module and the file containing the json string
 import json
+dictionary_source = open(file)
