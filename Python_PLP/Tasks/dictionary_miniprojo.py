@@ -11,15 +11,39 @@
 # eg . pott instead of pot or rainn instead of rain. Tip: use difflib library here
 
 # Import the JSON module and the file containing the json string
-import json
-json_dictionary_source = open("Python_PLP\Tasks/dictionary-data-master/dictionary-data-master/data.json")
+import json #the internal python json module
+json_dictionary_source = open("Python_PLP\Tasks/dictionary-data-master/dictionary-data-master/data.json") #the directory of the python file
 # Load the json file as a dictionary in python
 dictionary_source = json.load(json_dictionary_source)
+# Ask the user to input any word for search
+print("...Denzel Dictionary🔤...")
+print("...No more struggle with words,😍 Denzel gives you hugs...😍🤗🎊")
+# Search word function
+def search_word(word):
+    """Search for the word"""
+        # Change the word into one nomalised case
+    filtered_word = word.lower()
+    # Check if the word exist
+    # Search for the word in the dictionary_source
+    for meaning in dictionary_source[filtered_word]:
+        # Check if the word exist in the dictionary
+        if filtered_word not in dictionary_source:
+            print("Sorry, word not found, try another one...")
+        else:
+            print("\nThe meaning of {} is:\n{}".format(word, meaning))
+# Let the program run multiple times until the user exits
+rerun = "y"
+while (rerun.lower() == "y"):
+    # Get the input from the user
+    word = input("Enter the word to search: ")
+    # Call the function
+    search_word(word)
+    # Ask if the user wishes to continue with the program
+    rerun = input("\nDo you want to search for another word?😲\n[Type y to re-search, or x to exit]: ")
+# If the user doesn't want to continue
+print("Okay, bye...🤗🤗🤗")
+# Close the file
+json_dictionary_source.close()
 
-# Try and iterate through the data inside the file-- dictionary_source
-for word in dictionary_source["abandoned industrial site"]:
-    print(word)
 
-# Get the keys
-# print(dictionary_source.keys())
 
