@@ -4,7 +4,7 @@ from django.db import models
 # Two tables: pets and vaccines-- Many to many
 
 # Create a model for vaccines model
-class Vaccines(models.Model):
+class Vaccine(models.Model):
     # The attributes/ fields
     name = models.CharField(max_length=155, unique=True)
 
@@ -22,7 +22,7 @@ class Pet(models.Model):
     description = models.TextField(blank=True, null=True)
 
     # Relationship
-    vaccines = models.ManyToManyField(Vaccines)
+    vaccines = models.ManyToManyField(Vaccine)
 
     # To return the name of the pet
     def __str__(self):
