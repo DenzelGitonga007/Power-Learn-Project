@@ -23,3 +23,7 @@ class Pet(models.Model):
 
     # Relationship
     vaccines = models.ManyToManyField(Vaccines)
+
+    # To return the name of the pet
+    def __str__(self):
+        return self.name
