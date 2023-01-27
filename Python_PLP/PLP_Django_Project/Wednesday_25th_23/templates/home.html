@@ -8,5 +8,16 @@
 </head>
 <body>
     <h3>Pets Display here</h3>
+    <!-- # Use DTL/Njija2 -->
+    {% if pets %}
+    <ul>
+        {% for pet in pets%}
+        <li>Name: {{pet.name}}</li>
+        <li>Gender: {{pet.gender}}</li>
+        <li>Age: {{pet.age}}</li>
+        <li>Description: {{pet.description}}</li>
+        {% endfor %}
+    </ul>
+    {% endif%}
 </body>
 </html>

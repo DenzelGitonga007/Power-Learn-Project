@@ -45,7 +45,6 @@ while (rerun.lower() == "y"):
 print("Okay, bye...🤗🤗🤗")
 # Close the file
 json_dictionary_source.close()
-# Try and make the search intelligent with autocomplete
-# Supposed to resume from here-- still to come
+
 
 
