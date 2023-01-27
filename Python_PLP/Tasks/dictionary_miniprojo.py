@@ -12,6 +12,8 @@
 
 # Import the JSON module and the file containing the json string
 import json #the internal python json module
+# Import the suggestion module-- difflib
+import difflib
 json_dictionary_source = open("Python_PLP\Tasks/dictionary-data-master/dictionary-data-master/data.json") #the directory of the python file
 # Load the json file as a dictionary in python
 dictionary_source = json.load(json_dictionary_source)
@@ -30,6 +32,16 @@ def search_word(word):
             print("\nThe meaning of {} is:\n{}".format(word, meaning))
     except KeyError:
         print("Oops!🫠 🫤  Word not found... Try another search perhaps?🤔")
+        # Try to put the suggestion here
+        # Specify the number of close matches required, n
+        n = 3
+        # Accuracy, cut off
+        cutoff = 0.6
+        # The suggestion function
+        suggestion = difflib.get_close_matches(filtered_word, dictionary_source, n, cutoff)
+        print("\nYou can consider the following suggestions matching '{}'\n{}".format(word, suggestion))
+
+
 #end of function search_word
 
 # Let the program run multiple times until the user exits
