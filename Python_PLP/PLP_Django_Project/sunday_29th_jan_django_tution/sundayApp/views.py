@@ -6,4 +6,8 @@ from .forms import ApplicationForm
 
 def sunday_view(request):
     form = ApplicationForm()
-    return render(request, 'application.html', {})
+    context = {
+        'form_data': form
+    }
+    return render(request, 'application.html', context)
+    
