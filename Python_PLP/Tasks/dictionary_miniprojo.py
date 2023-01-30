@@ -14,7 +14,7 @@
 import json #the internal python json module
 # Import the suggestion module-- difflib
 import difflib
-json_dictionary_source = open("Python_PLP\Tasks/dictionary-data-master/dictionary-data-master/data.json") #the directory of the python file
+json_dictionary_source = open("dictionary-data-master/dictionary-data-master/data.json") #the directory of the python file
 # Load the json file as a dictionary in python
 dictionary_source = json.load(json_dictionary_source)
 # Ask the user to input any word for search
