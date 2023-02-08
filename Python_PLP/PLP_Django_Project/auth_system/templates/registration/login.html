@@ -8,6 +8,13 @@
 </head>
 <body>
     <h1>Denzel Login Form</h1>
+    <!-- Login form -->
+    <form action="" method="post">
+        <!-- Ginger tags -->
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" value="Login">Log In</button>
+    </form>
     
 </body>
 </html>
