@@ -9,15 +9,15 @@ for letter in welcome_note:
     print(letter, end='')
 
 # Get the user's name
-username = input("Now you enter your name, dear 🤗: ")
-for letter in username:
-    time.sleep(.1)
-    print(letter, end='')
+username = input("\nNow you enter your name, dear 🤗: ")
+# for letter in username:
+#     time.sleep(.1)
+#     print(letter, end='')
 
 print("\nHeyyy there {} 🥰💖".format(username))
 
 # Some charming line
-pickupline = "Roses are red🌹 \n\tViolets are blue💙, \n\t\tSugar is sweet🍬, \n\t\tAnd so are you 💖!"
+pickupline = "Roses are red🌹 \n\tViolets are blue💙, \n\t\tSugar is sweet🍬, \n\t\tAnd so are you 💖!\n"
 for letter in pickupline:
     time.sleep(.1)
     print(letter, end='')
@@ -25,7 +25,10 @@ for letter in pickupline:
 time.sleep(2)
 
 # PLP wishes for your valentines
-plp_wishes = "Now, PLP also wishes to express their love towards you, {} 🤗🥰💖, is that's sweet of them? 😉😚😍😀🤪".format(username)
+plp_wishes = "\nNow, PLP also wishes to express their love towards you, {} 🤗🥰💖, is that's sweet of them? 😉😚😍😀🤪".format(username)
 for letter in plp_wishes:
     time.sleep(.1)
     print(letter, end='')
+
+# Get the status of the user
+status = ["single", "dating", "married", "complicated"]
