@@ -8,4 +8,10 @@ for letter in welcome_note:
     time.sleep(.1) # to print slowly
     print(letter, end='')
 
+# Get the user's name
+username = input("Now you enter your name, dear 🤗: ")
+for letter in username:
+    time.sleep(.1)
+    print(letter, end='')
 
+print("\nHeyyy there {} 🥰💖".format(username))
