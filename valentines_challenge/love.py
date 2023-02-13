@@ -22,4 +22,10 @@ for letter in pickupline:
     time.sleep(.1)
     print(letter, end='')
 
+time.sleep(2)
 
+# PLP wishes for your valentines
+plp_wishes = "Now, PLP also wishes to express their love towards you, {} 🤗🥰💖, is that's sweet of them? 😉😚😍😀🤪".format(username)
+for letter in plp_wishes:
+    time.sleep(.1)
+    print(letter, end='')
