@@ -17,7 +17,7 @@ username = input("\nNow you enter your name, dear 🤗: ")
 print("\nHeyyy there {} 🥰💖".format(username))
 
 # Some charming line
-pickupline = "Roses are red🌹 \n\tViolets are blue💙, \n\t\tSugar is sweet🍬, \n\t\tAnd so are you 💖!\n"
+pickupline = "Roses are red🌹 \n\tViolets are blue💙, \n\t\tSugar is sweet🍬, \n\t\t\tAnd so are you 💖!\n"
 for letter in pickupline:
     time.sleep(.1)
     print(letter, end='')
@@ -25,10 +25,21 @@ for letter in pickupline:
 time.sleep(2)
 
 # PLP wishes for your valentines
-plp_wishes = "\nNow, PLP also wishes to express their love towards you, {} 🤗🥰💖, is that's sweet of them? 😉😚😍😀🤪".format(username)
+plp_wishes = "\nNow, PLP also wishes to express their love towards you, {} 🤗🥰💖, isn't that sweet of them? 😉😚😍😀🤪\n".format(username)
 for letter in plp_wishes:
     time.sleep(.1)
     print(letter, end='')
 
 # Get the status of the user
-status = ["single", "dating", "married", "complicated"]
+status_question = "\nLet us know your current love status, dear {} 😍😀🤪".format(username)
+status = ["single, ", "dating, ", "married, ", "complicated "]
+for letter in status_question:
+    time.sleep(.1)
+    print(letter, end='')
+
+print("\nSelect one amongst:")
+for option in status:
+    time.sleep(.1)
+    print(option, end='')
+
+status_selected = input("\nType your status 😍😀🤪: ")
