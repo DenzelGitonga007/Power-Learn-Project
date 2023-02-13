@@ -15,3 +15,11 @@ for letter in username:
     print(letter, end='')
 
 print("\nHeyyy there {} 🥰💖".format(username))
+
+# Some charming line
+pickupline = "Roses are red🌹 \n\tViolets are blue💙, \n\t\tSugar is sweet🍬, \n\t\tAnd so are you 💖!"
+for letter in pickupline:
+    time.sleep(.1)
+    print(letter, end='')
+
+
