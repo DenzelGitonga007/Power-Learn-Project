@@ -4,8 +4,11 @@ from django.shortcuts import render
 
 # Home view
 def home_view(request):
-    return render(request, 'home.html', {})
-
+    # filter
+    name = {
+        "first_name": "Denzel",
+    }
+    return render(request, 'home.html', name)
 
 # About view
 def about_view(request):
