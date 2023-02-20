@@ -13,4 +13,5 @@ class houseListingModel(models.Model):
 
     # present the strings/columns on the UI
     def __str__(self):
-        return self.title
+        return self.title, self.address, self.price, self.square_feet
+        
