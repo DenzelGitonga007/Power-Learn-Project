@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Register apps
     'home',
+    'accounts',
 ]
 
 MIDDLEWARE = [
