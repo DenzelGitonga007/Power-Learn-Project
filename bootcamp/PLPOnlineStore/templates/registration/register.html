@@ -5,7 +5,6 @@
     <!-- Sign up form -->
     <div class="container container-fluid">
       <form action="" method="POST">
-        <!-- Call the form -->
         {% csrf_token %}
         <!-- The names group -->
         <div class="form-row">
@@ -35,7 +34,7 @@
           <!-- Password -->
           <div class="form-group col-md-6">
             <label for="password1">Password</label>
-            <input type="password" class="form-control" name="id_password1" required id="password1" placeholder="Your Password">
+            <input type="password" class="form-control" name="password1" required id="id_password1" placeholder="Your Password">
           </div>
           <!-- Confirm password -->
           <div class="form-group col-md-6">
