@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+<!-- The body -->
+{% block content %}
+    <!-- Sign up form -->
+    <div class="container container-fluid">
+      <form action="" method="POST">
+        {% csrf_token %}
+        <!-- The names group -->
+        <div class="form-row">
+            <!-- First Name -->
+          <div class="form-group col-md-4">
+            <label for="first_name">First Name</label>
+            <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="Your First Name">
+          </div>
+            <!-- Last Name -->
+          <div class="form-group col-md-4">
+            <label for="last_name">Last Name</label>
+            <input type="text" class="form-control" name="last_name"  id="id_last_name" placeholder="Enter Your Last Name">
+          </div>
+            <!-- Username -->
+          <div class="form-group col-md-4">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" required id="id_username" placeholder="Enter Your Username">
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" required id="id_email" placeholder="Enter Your Email">
+        </div>
+        <!-- Passwords -->
+        <div class="form-row">
+          <!-- Password -->
+          <div class="form-group col-md-6">
+            <label for="password1">Password</label>
+            <input type="password" class="form-control" name="password1" required id="id_password1" placeholder="Your Password">
+          </div>
+          <!-- Confirm password -->
+          <div class="form-group col-md-6">
+            <label for="password2">Password Confirmation</label>
+            <input type="password" class="form-control" name="password2" id="id_password2" placeholder="Repeat Password">
+          </div>
+        </div>
+        <!-- Remember me and Already have an account -->
+        <div class="form-row">
+          <!-- Remember Me -->
+          <div class="form-group col-md-6">
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="rememberme">
+                <label class="custom-control-label" for="rememberme">Remember Me</label>
+              </div>
+          </div>
+          <!-- Already have an account -->
+          <div class="form-group col-md-6">
+                <p>Already have an account?</p>
+          </div>
+        </div>
+        <br>
+        <!-- Submit -->
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <!-- {{form}} -->
+{% endblock %}

@@ -3,63 +3,76 @@
 <!-- The body -->
 {% block content %}
     <!-- Sign up form -->
-    <div class="container container-fluid">
-      <form action="" method="POST">
+    <div class="container">
+      <form action="#" method="post">
         {% csrf_token %}
-        <!-- The names group -->
-        <div class="form-row">
-            <!-- First Name -->
-          <div class="form-group col-md-4">
-            <label for="first_name">First Name</label>
-            <input type="text" class="form-control" name="first_name" id="id_first_name" placeholder="Your First Name">
-          </div>
-            <!-- Last Name -->
-          <div class="form-group col-md-4">
-            <label for="last_name">Last Name</label>
-            <input type="text" class="form-control" name="last_name"  id="id_last_name" placeholder="Enter Your Last Name">
-          </div>
-            <!-- Username -->
-          <div class="form-group col-md-4">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" name="username" required id="id_username" placeholder="Enter Your Username">
-          </div>
-        </div>
-        <!-- Email -->
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" required id="id_email" placeholder="Enter Your Email">
-        </div>
-        <!-- Passwords -->
-        <div class="form-row">
-          <!-- Password -->
-          <div class="form-group col-md-6">
-            <label for="password1">Password</label>
-            <input type="password" class="form-control" name="password1" required id="id_password1" placeholder="Your Password">
-          </div>
-          <!-- Confirm password -->
-          <div class="form-group col-md-6">
-            <label for="password2">Password Confirmation</label>
-            <input type="password" class="form-control" name="password2" id="id_password2" placeholder="Repeat Password">
-          </div>
-        </div>
-        <!-- Remember me and Already have an account -->
-        <div class="form-row">
-          <!-- Remember Me -->
-          <div class="form-group col-md-6">
-              <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="rememberme">
-                <label class="custom-control-label" for="rememberme">Remember Me</label>
+        <div class="row justify-content-md-center">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="login-screen">
+              <div class="login-box">
+                <a href="#" class="login-logo">
+                  <img src="//ssl.gstatic.com/accounts/ui/logo_2x.png" alt="Bootdey bootstrap snippets bootdey">
+                </a>
+
+                <!-- Input fields -->
+                <div class="row gutters">
+                  <!-- first_name -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="first_name" placeholder="First Name">
+                    </div>
+                  </div>
+                  <!-- last_name -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <!-- username -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="text" name="username" required class="form-control" placeholder="Username">
+                    </div>
+                  </div>
+                  <!-- email -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" required placeholder="Email">
+                    </div>
+                  </div>
+                  <!-- password -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password1" required placeholder="Password">
+                    </div>
+                  </div>
+                  <!-- confirm password -->
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password2" required placeholder="Confirm Password">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submissions -->
+                <div class="actions clearfix">
+                  <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                </div>
+                <div class="or">
+                  <span>or signup using</span>
+                </div>
+                <div class="row gutters">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <button type="submit" class="btn btn-tw btn-block">Twitter</button>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <button type="submit" class="btn btn-fb btn-block">Facebook</button>
+                  </div>
+                </div>
+                <a href="#" class="additional-link">Have an Account? <span>Login Now</span></a>
               </div>
+            </div>
           </div>
-          <!-- Already have an account -->
-          <div class="form-group col-md-6">
-                <p>Already have an account?</p>
-          </div>
-        </div>
-        <br>
-        <!-- Submit -->
-        <div class="form-row">
-          <button type="submit" class="btn btn-primary">Sign Up</button>
         </div>
       </form>
     </div>
