@@ -7,7 +7,7 @@ from .forms import CustomerSignUpForm
 def login(request):
     pass
 
-def register(register):
+def register(request):
     if request.method == 'POST': # If user posts data
         form = CustomerSignUpForm(request.POST)
         # Validate the fields in the customersignupform
@@ -17,7 +17,7 @@ def register(register):
             signup_user = User.objects.get(username=username)
             customer_group = Group.objects.get(name='Customer')
             customer_group.user_set.add(signup_user)
-        else:
-            form = CustomerSignUpForm(request.POST)
+    else:
+        form = CustomerSignUpForm(request.POST)
+    return render(request, 'registration/register.html', {'form':form})
 
-        return render(request, 'registration/register.html', {'form':form})
