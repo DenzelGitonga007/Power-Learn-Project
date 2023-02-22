@@ -3,5 +3,62 @@
 <!-- The body -->
 {% block content %}
     <!-- Sign up form -->
-    
+    <div class="container container-fluid">
+      <form action="" method="POST">
+        <!-- Call the form -->
+        {% csrf_token %}
+        <!-- The names group -->
+        <div class="form-row">
+            <!-- First Name -->
+          <div class="form-group col-md-4">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Your First Name" value="{{form.firstname}}">
+          </div>
+            <!-- Last Name -->
+          <div class="form-group col-md-4">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Enter Your Last Name">
+          </div>
+            <!-- Username -->
+          <div class="form-group col-md-4">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Your Username">
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+        </div>
+        <!-- Passwords -->
+        <div class="form-row">
+          <!-- Password -->
+          <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Your Password">
+          </div>
+          <!-- Confirm password -->
+          <div class="form-group col-md-6">
+            <label for="password2">Password Confirmation</label>
+            <input type="password" class="form-control" id="password2" placeholder="Repeat Password">
+          </div>
+        </div>
+        <!-- Remember me and Already have an account -->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div class="col-auto my-1">
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="rememberme">
+                <label class="custom-control-label" for="rememberme">Remember Me</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Submit -->
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </form>
+    </div>
 {% endblock %}
