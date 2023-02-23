@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # Register apps
     'home',
     'accounts',
+    'store',
+    'category'
 ]
 
 MIDDLEWARE = [

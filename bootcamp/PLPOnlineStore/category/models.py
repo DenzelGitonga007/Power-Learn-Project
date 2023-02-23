@@ -4,7 +4,7 @@ from django.urls import reverse
 class Category(models.Model):
 
     STATUS = (
-        ('True', 'True')
+        ('True', 'True'),
         ('False', 'False')
     )
     name = models.CharField(max_length=200, unique=True)
