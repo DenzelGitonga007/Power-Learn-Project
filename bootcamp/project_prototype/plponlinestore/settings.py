@@ -177,3 +177,6 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51HHwtsALkflzayMusf7qb4AEgvsEyr0Mt3l9v2g54g7hQ
 STRIPE_SECRET_KEY = 'sk_test_51HHwtsALkflzayMuLXHcPo0M5UDr5xKg8BDikTNeLshVf6FZcpBhcmBCv5RVTc9xOaWh2AlQaFPN03snfnG6OStj00EeKwAfYV'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# To get the migrations updated to the django 3.2
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
