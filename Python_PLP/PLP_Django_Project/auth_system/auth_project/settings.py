@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Include the accounts app
-    'accounts',
+    # Include the crud app
+    'crudApp_two'
 ]
 
 MIDDLEWARE = [
