@@ -7,7 +7,6 @@ class UserProfile(models.Model):
 
 
 
-
 class Task(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
