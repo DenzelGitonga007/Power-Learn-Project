@@ -11,4 +11,8 @@ def taskList(request):
 
 # View task by ID
 def taskDetail(request, pk):
-    return render(request, "tasks/taskdetail.html")
+    specific_task = Task.objects.get(pk=pk)
+    context = {
+        "task" : specific_task
+    }
+    return render(request, "tasks/taskdetail.html", context)
