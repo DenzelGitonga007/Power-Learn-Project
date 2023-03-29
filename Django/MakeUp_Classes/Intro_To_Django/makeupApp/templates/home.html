@@ -8,5 +8,24 @@
 </head>
 <body>
     <h2>Hey, Denzel just learnt the Django View-Template make up class</h2>
+    <h3>Displaying data</h3>
+    <!-- Static data -->
+    <!-- <pre>
+        <p>
+            Name : {{ name }}
+            Email: {{ email }}
+            Age: {{ age }}
+        </p>
+    </pre> -->
+    <!-- Data from db -->
+    <h5>
+        <ul>
+            {% for person in persons %}
+            <li>Name: {{ person.name }}</li>
+            <!-- <li>Email: {{ person.email }}</li>
+            <li>Age: {{ person.age }}</li> -->
+            {% endfor %}
+        </ul>
+    </h5>
 </body>
 </html>
