@@ -1,0 +1,8 @@
+<ul>
+    {% for task in tasks %}
+        <li>{{task.user}}</li>
+        <li>{{task.name}}</li>
+        <li>{{task.description}}</li>
+        <li>{{task.created_on}}</li>
+    {% endfor %}
+</ul>
