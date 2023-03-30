@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # urls for the makeupApp
     path('', include('makeupApp.urls')),
-    path('tapp/', include('taskApp.urls')),
+    path('tapp/', include('taskApp.urls')), # call the tapp in the url
 ]
